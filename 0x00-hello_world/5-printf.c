@@ -5,7 +5,7 @@
  *
  */
 int main(void)
-
+/*program to display an output*/
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
