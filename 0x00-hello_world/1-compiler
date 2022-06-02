@@ -1,0 +1,3 @@
+#!/bin/bash
+gcc -c $CFILE
+/* -c because instruction says it should only compile, not link */
