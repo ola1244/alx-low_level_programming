@@ -4,9 +4,8 @@
  * Return: Always 0(Success)
  *
  */
-int main(void)
-/*program to display an output*/
-{
+int main(void)/
+{/*main body of the program*/
 	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
 }
