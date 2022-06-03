@@ -4,9 +4,8 @@
  *
  *Return: Always 0(Success)
  */
-int main(void)//This is the body of the program
+int main(void)/*This is the body of the program*/
 {
 	puts("\"Programming is like building a multilingual puzzle");
-/*Using puts as an output stmt*/
 return (0);
 }	
