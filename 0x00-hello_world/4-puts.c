@@ -4,7 +4,7 @@
  *
  *Return: Always 0(Success)
  */
-void main
+int main(void)//This is the body of the program
 {
 	puts("\"Programming is like building a multilingual puzzle");
 /*Using puts as an output stmt*/
