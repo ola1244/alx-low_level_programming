@@ -9,7 +9,6 @@
  */
 
 int main(void)
-
 {
 int i;
 unsigned long int j, k, next, sum;
