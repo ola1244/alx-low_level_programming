@@ -1,1 +1,1 @@
-C is fun
+More Pointers arrays and C strings
