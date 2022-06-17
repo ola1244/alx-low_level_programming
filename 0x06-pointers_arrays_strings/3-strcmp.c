@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  *_strcmp - Compares pointers to two strings.
