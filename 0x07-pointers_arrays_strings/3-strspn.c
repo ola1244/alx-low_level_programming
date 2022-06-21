@@ -12,7 +12,7 @@
  *
  *consist only of bytes from accept
  */
-unsigned int_strspn(char *s, char *accept)
+unsigned int I[I_strspn(char *s, char *accept)
 unsigned int _strspn(char *s, char *accept)
 {
 unsigned int bytes = 0;
