@@ -27,7 +27,7 @@ for (digit = 0; argv[num][digit]; digit++)
 {
 if (argv[num][digit] < '0' || argv[num][digit] > '9')
 {
-rintf("Error\n");
+printf("Error\n");
 return (1);
 }
 }
