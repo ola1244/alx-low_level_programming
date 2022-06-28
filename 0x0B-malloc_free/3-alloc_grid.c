@@ -29,7 +29,7 @@ return (NULL);
 for (hgt_index = 0; hgt_index < height; hgt_index++)
 {
 twoD[hgt_index] = malloc(sizeof(int) * width);
-if (twoD[hgt_index] == NULL)	
+if (twoD[hgt_index] == NULL)
 {
 for (; hgt_index >= 0; hgt_index--)
 free(twoD[hgt_index]);
