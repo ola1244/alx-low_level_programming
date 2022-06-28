@@ -15,7 +15,6 @@ char **strtow(char *str);
  *Return: The index marking the end of the initial word pointed to by str.
  *
  */
-
 int word_len(char *str)
 {
 int index = 0, len = 0;
@@ -50,7 +49,7 @@ words++;
 index += word_len(str + index);
 }
 
-)
+}
 return (words);
 
 }
