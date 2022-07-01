@@ -1,13 +1,14 @@
-#include"main.h"
-#include<stdio.h>
-#include<stdlib.h>
-#include<limits.h>
+#include "main.h"
+#include <stdlib.h>
 
 /**
- *main - check the code
+ *malloc_checked - Allocates memory using malloc.
+ *
+ *@b: The number of bytes to be allocated.
  *
  *
- *Return: Always 0.
+ *
+ *Return: A pointer to the allocated memory.
  *
  */
 void *malloc_checked(unsigned int b)
