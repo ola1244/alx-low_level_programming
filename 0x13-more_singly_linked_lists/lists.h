@@ -1,85 +1,97 @@
-#include "lists.h"
+#ifndef _LISTS_
+
+#define _LISTS_
+
+
+
+#include <stdio.h>
+
+#include <stdlib.h>
 
 
 
 /**
 
- * print_listint - prints all the elements of a list.
+ * struct listint_s - singly linked list
 
- * @h: head of a list.
+ * @n: integer
+
+ * @next: points to the next node
 
  *
 
- * Return: numbers of nodes.
+ * Description: singly linked list node structure
+
+ * for Holberton project
 
  */
 
-size_t print_listint(const listint_t *h)
+typedef struct listint_s
 
 {
 
-	size_t nnodes = 0;
+	int n;
 
+	struct listint_s *next;
 
-
-	while (h != NULL)
-
-	{
-
-		printf("%d\n", h->n);
-
-		h = h->next;
-
-		nnodes++;
-
-	}
-
-	return (nnodes);
-
-}
-
- 20  
-
-0x13-more_singly_linked_lists/1-listint_len.c
-
-@@ -0,0 +1,20 @@
-
-#include "lists.h"
+} listint_t;
 
 
 
 /**
 
- * listint_len - returns the number of elements in
+ * struct listp_s - singly linked list
 
- * a linked list.
+ * @p: pointers of nodes
 
- * @h: head of a list.
+ * @next: points to the next node
 
  *
 
- * Return: numbers of nodes.
+ * Description: singly linked list of pointers
 
  */
 
-size_t listint_len(const listint_t *h)
+typedef struct listp_s
 
 {
 
-	size_t nnodes = 0;
+	void *p;
+
+	struct listp_s *next;
+
+} listp_t;
 
 
 
-	while (h != NULL)
+size_t print_listint(const listint_t *h);
 
-	{
+size_t listint_len(const listint_t *h);
 
-		h = h->next;
+listint_t *add_nodeint(listint_t **head, const int n);
 
-		nnodes++;
+listint_t *add_nodeint_end(listint_t **head, const int n);
 
-	}
+void free_listint(listint_t *head);
 
-	return (nnodes);
+void free_listint2(listint_t **head);
 
-}
+int pop_listint(listint_t **head);
+
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
+
+int sum_listint(listint_t *head);
+
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
+
+int delete_nodeint_at_index(listint_t **head, unsigned int index);
+
+listint_t *reverse_listint(listint_t **head);
+
+size_t print_listint_safe(const listint_t *head);
+
+size_t free_listint_safe(listint_t **h);
+
+listint_t *find_listint_loop(listint_t *head);
+
+#endif
